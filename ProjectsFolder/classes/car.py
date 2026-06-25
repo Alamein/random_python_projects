@@ -74,3 +74,4 @@ my_tesla = ElectricCar('tesla', 'model s', 2025)
 
 print(my_tesla.get_descriptive_name())
 print(my_tesla.battery.describe_battery())
+print(my_tesla.battery.get_range())

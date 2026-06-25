@@ -43,3 +43,19 @@ print(restaurant.cuisine.title())
 
 print(restaurant.describe_restaurant())
 print(restaurant.open_restaurant())
+
+
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, cuisine_type):
+        super().__init__(restaurant_name, cuisine_type)
+        '''An attempt to create an Ice cream stand restaurant.'''
+        self.flavors = ['vanilla', 'chocolate', 'strawberry']
+
+    def available_flavours(self):
+        print('The available flavours we have include: ')
+        for i in self.flavors:
+            print(f'\t-{i}')
+        print('\t-...')
+
+ice_cream_stand = IceCreamStand('A-Ice cream', 'mixing flavour')
+ice_cream_stand.available_flavours()
