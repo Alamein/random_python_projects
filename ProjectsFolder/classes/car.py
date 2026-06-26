@@ -75,3 +75,9 @@ my_tesla = ElectricCar('tesla', 'model s', 2025)
 print(my_tesla.get_descriptive_name())
 print(my_tesla.battery.describe_battery())
 print(my_tesla.battery.get_range())
+
+
+class HybridCar(Car):
+    '''This class help to create a hybride car.'''
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
