@@ -81,3 +81,8 @@ class HybridCar(Car):
     '''This class help to create a hybride car.'''
     def __init__(self, make, model, year):
         super().__init__(make, model, year)
+
+class ElectricBike():
+    '''An attempt to create to create electric Bike.'''
+    def __init__(self):
+        pass
