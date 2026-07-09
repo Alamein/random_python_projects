@@ -17,7 +17,7 @@ def run_game():
     # bg_color = (230, 230, 230)
 
     # Make a ship
-    ship = Ship(screen)
+    ship = Ship(ai_settings, screen)
 
     # Start the main loop for the game.
     while True:
@@ -28,6 +28,7 @@ def run_game():
         #     if event.type == pygame.QUIT:
         #         sys.exit()
 
+        ship.update()
 
         # Redraw the screen during each pass through the loop.
         gf.update_screen(ai_settings, screen, ship)
